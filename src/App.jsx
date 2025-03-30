@@ -2,13 +2,13 @@ import { useState } from "react"
 import IconStar from "./images/icon-star.svg"
 
 export function App(){
+  const [notaAvaliacao, setNotaAvaliacao] = useState(0)
+
+  function handleAlterarNotaAvaliacao(nota){
+    setNotaAvaliacao(nota)
+
+  }
   return(
-    const [notaAvaliacao, setNotaAvaliacao] = useState(0)
-
-    function handleAlterarNotaAvaliacao(nota){
-      setNotaAvaliacao(nota)
-
-    }
 
     <div className="bg-gradient-dark mx-6 p-6 rounded-2xl text-white font-overpass">
       <div className="bg-dark-blue p-4 w-fit rounded-full mb-4">
