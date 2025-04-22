@@ -5,8 +5,9 @@ export function CardInicial({ setNotaAvaliacao, notaAvaliacao, setSubmited }){
 
     function handleSubmit(){
         if(notaAvaliacao !== 0){
-        setSubmited(true)
-        return
+            setSubmited(true)
+            return
+
         }
 
         alert("Please, choose a note!")
@@ -22,14 +23,14 @@ export function CardInicial({ setNotaAvaliacao, notaAvaliacao, setSubmited }){
       
             <p className="text-light-grey text-sm leading-1 mb-6">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             <div className="flex justify-between mb-6">
-                <InputButton value={1} setNotaAvaliacao={setNotaAvaliacao}/>
-                <InputButton value={2} setNotaAvaliacao={setNotaAvaliacao}/>
-                <InputButton value={3} setNotaAvaliacao={setNotaAvaliacao}/>
-                <InputButton value={4} setNotaAvaliacao={setNotaAvaliacao}/>
-                <InputButton value={5} setNotaAvaliacao={setNotaAvaliacao}/>
+                <InputButton value={1} setNotaAvaliacao={setNotaAvaliacao} />
+                <InputButton value={2} setNotaAvaliacao={setNotaAvaliacao} />
+                <InputButton value={3} setNotaAvaliacao={setNotaAvaliacao} />
+                <InputButton value={4} setNotaAvaliacao={setNotaAvaliacao} />
+                <InputButton value={5} setNotaAvaliacao={setNotaAvaliacao} />
             </div>
       
-            <button className="bg-orange w-full py-3 uppercase text-sm rounded-3xl tracking-1 font-bold hover:bg-white hover:text-orange hover:cursor-pointer" onClick={handleSubmit}>Submit</button>
+            <button className="bg-orange w-full py-3 uppercase text-sm rounded-3xl tracking-1 font-bold hover:bg-white hover:text-orange hover:cursor-pointer duration-500" onClick={handleSubmit}>Submit</button>
         </div>
     ) 
 }
